@@ -81,6 +81,62 @@ a:hover {
     margin-bottom: 5px;
 }
 
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ddd;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    padding-left: 140px;
+    position: relative;
+}
+
+.timeline-year {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+    width: 80px;
+    text-align: right;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 42px;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 2px solid #007acc;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #007acc;
+}
+
+.timeline-content p {
+    margin: 0;
+    color: #333;
+}
+
 footer {
     text-align: center;
     margin-top: 40px;
